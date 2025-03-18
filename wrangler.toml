@@ -1,0 +1,12 @@
+# Create wrangler.toml
+echo '[build.environment]
+NODE_VERSION = "20.11.1"' > wrangler.toml
+
+# Check if you have next.config.js or next.config.ts
+# If not, create a basic one:
+echo 'module.exports = {
+  output: "export",
+  images: {
+    unoptimized: true
+  }
+};' > next.config.js
